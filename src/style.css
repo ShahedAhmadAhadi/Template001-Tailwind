@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media screen and (max-width: 767px){
+  #menu:checked ~ #nav #toggle{
+      height: 230px;
+      transition: all 400ms linear;}
+  #toggle{
+    height:0;
+    overflow-y: hidden;
+    transition: height 400ms linear;
+  }
+
+}
+@media screen and (min-width: 940px){
+    #bac{
+      height: 30rem;
+    }
+}
+@media screen and (min-width: 1100px){
+  #bac{
+    height: 32rem;
+  }
+}
+@media screen and (max-width: 295px){
+  #text{
+    font-size:initial;
+  }
+}
+#foot1{
+  background-color: #323754;
+  z-index: 50;
+}
+#btn{
+  background-color: #5BD4EF;
+}
+#end{
+  background-color: #eff3fe;
+}
