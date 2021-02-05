@@ -1,222 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-</head>
-<body>
-    <div class=" grid grid-cols-12 ">
-        <header class="grid grid-cols-12 p-1 col-start-1 col-end-13 text-xl  md:text-lg bg-white md:flex z-10 relative justify-items-center lg:col-start-2 lg:col-end-12">
-            <a href="#" class="col-start-1 col-end-8 justify-self-start md:flex-grow md:order-1 md:py-3">
-                <i class="bi bi-grid-3x3-gap-fill text-blue-600"></i>
-                <span class="text-xl align-middle">
-                <span class="font-bold">San</span>Francisco
-                </span>
-            </a>
-            <nav id="text" class="col-start-9 col-end-12 md:col-start-9 md:col-end-11 md:justify-self-center justify-self-end mr-2 md:order-4 md:p-3">
-                <a href="#" class="p-1 bi bi-cart3 relative">
-                    <span class="absolute bg-blue-600 rounded-full inset-x-3 text-xs text-white text-center w-4 h-4">3</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+        <div class="grid grid-cols-12">
+            <header
+                class="grid grid-cols-12 p-1 col-start-1 col-end-13 text-xl md:text-lg bg-white md:flex z-10 relative justify-items-center lg:col-start-2 lg:col-end-12"
+            >
+                <a
+                    href="#"
+                    class="col-start-1 col-end-8 justify-self-start md:flex-grow md:order-1 md:py-3"
+                >
+                    <i class="bi bi-grid-3x3-gap-fill text-blue-600"></i>
+                    <span class="text-xl align-middle">
+                        <span class="font-bold">San</span>Francisco
+                    </span>
                 </a>
-                <a href="#" class="p-1 bi bi-search"></a>
-            </nav>
-            <input type="checkbox" name="" id="menu" class="hidden"/>
-            <label for="menu" class="col-start-12 col-end-13 p-1 justify-self-end md:hidden" id="label">
-                <div id="first" class="w-6 h-1 bg-black m-1 rounded"></div>
-                <div id="second" class="w-6 h-1 bg-black m-1 rounded"></div>
-                <div id="third" class="w-6 h-1 bg-black m-1 rounded"></div>
-            </label>
-            <nav id="nav" class="col-start-1 col-end-13 text-center z-50 w-full bg-white md:p-3 md:w-auto md:order-1 md:mr-2">
-                <ul class="divide-y-2 flex flex-col justify-center divide-gray-200 divide-opacity-50 md:flex md:flex-row md:divide-y-0" id="toggle">
-                    <li class="p-1">Home</li>
-                    <li class="p-1">About</li>
-                    <li class="p-1">Services</li>
-                    <li class="p-1">Work</li>
-                    <li class="p-1">Pricing</li>
-                    <li class="p-1">Contact</li>
-                </ul>
-            </nav>
-            <button class="bg-blue-600 h-10 absolute border-none focus:outline-none hover:bg-blue-700 py-1.5 md:py-1 md:m-3 px-4 inset-y-40 rounded-full text-white text-sm z-10 md:static md:order-5">Get Started</button>
-        </header>
-        <section id="bac" class="col-start-1 relative bg-center bg-blue-600 bg-cover h-80 col-end-13 grid grid-cols-12 justify-items-center bg-no-repeat md:h-96 overflow-hidden" style="background-image: url(../images/xps-7ZWVnVSaafY-unsplash.jpg);" >
-            <!-- <img src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg" class="col-start-1 col-end-13" alt=""> -->
-            <span class="text-white text-xl md:text-3xl font-bold absolute inset-y-1/2 sm:text-2xl text-center">Latest News & Insights <br>
-                <span class="text-xs">HOME <i class="bi bi-chevron-right"></i> BLOG</span></span>
-        </section>
-        <article class="col-start-1 col-end-13 flex flex-col m-4 p-2 text-xl md:mt-16 md:order-2 md:col-start-8 md:col-end-13 md:text-base lg:text-lg lg:col-start-9 lg:col-end-13 xl:col-end-12">
-            <div class="bg-gray-100 ring-inset rounded-full flex my-3">
-                <input type="search" placeholder="Enter Keyword" id="" class="focus:outline-none w-10 bg-gray-100 flex-grow px-3 pb-2 pt-1.5 rounded-full">
-                <i class="bi bi-search text-blue-600 pr-6 px-3 pb-2 pt-1.5"></i>
-            </div>
-            <h1 class="font-semibold p-2 lg:m-2 text-2xl md:text-lg">
-                Categories
-            </h1>
-            <div class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between">
-                <h1 class="text-blue-600">App</h1> <span class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full">5</span>
-            </div>
-            <div class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between">
-                <h1 class="text-gray-500">Design</h1> <span class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full">3</span>
-            </div>
-            <div class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between">
-                <h1 class="text-gray-500">Software</h1> <span class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full">8 </span>
-            </div>
-            <div class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between">
-                <h1 class="text-gray-500">Technology</h1> <span class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full">5</span>
-            </div>
-            <section class="text-xl flex flex-col font-semibold hidden md:block md:text-sm lg:text-base">
-                <h1 class="p-2 mt-2 text-2xl md:text-lg">Popular Posts</h1>
-                <div class="p-2 lg:m-2 border-b-2">
-                    <h1 class="text-lg text-gray-500 p-2 pl-0">Software</h1>
-                    <p class="text-blue-600 p-2 pl-0">iPhone 12: Software comes first</p>
-                </div>
-                <div class="p-2 lg:m-2 border-b-2">
-                    <h1 class="text-lg md:text-lg text-gray-500 p-2 pl-0">Technology</h1>
-                    <p class="p-2 pl-0">iPhone 12: Software comes first</p>
-                </div>
-                <div class="p-2 lg:m-2 border-b-2">
-                    <h1 class="text-lg md:text-lg text-gray-500 p-2 pl-0">Design</h1>
-                    <p class="p-2 pl-0">iPhone 12: Software comes first</p>
-                </div>
-                <div class="p-2 lg:m-2 border-b-2">
-                    <h1 class="text-lg md:text-lg text-gray-500 p-2 pl-0">App</h1>
-                    <p class="p-2 pl-0">iPhone 12: Software comes first</p>
-                </div>
+                <nav
+                    id="text"
+                    class="col-start-9 col-end-12 md:col-start-9 md:col-end-11 md:justify-self-center justify-self-end mr-2 md:order-4 md:p-3"
+                >
+                    <a href="#" class="p-1 bi bi-cart3 relative">
+                        <span
+                            class="absolute bg-blue-600 rounded-full inset-x-3 text-xs text-white text-center w-4 h-4"
+                            >3</span
+                        >
+                    </a>
+                    <a href="#" class="p-1 bi bi-search"></a>
+                </nav>
+                <input type="checkbox" name="" id="menu" class="hidden" />
+                <label
+                    for="menu"
+                    class="col-start-12 col-end-13 p-1 justify-self-end md:hidden"
+                    id="label"
+                >
+                    <div id="first" class="w-6 h-1 bg-black m-1 rounded"></div>
+                    <div id="second" class="w-6 h-1 bg-black m-1 rounded"></div>
+                    <div id="third" class="w-6 h-1 bg-black m-1 rounded"></div>
+                </label>
+                <nav
+                    id="nav"
+                    class="col-start-1 col-end-13 text-center z-50 w-full bg-white md:p-3 md:w-auto md:order-1 md:mr-2"
+                >
+                    <ul
+                        class="divide-y-2 flex flex-col justify-center divide-gray-200 divide-opacity-50 md:flex md:flex-row md:divide-y-0"
+                        id="toggle"
+                    >
+                        <li class="p-1">Home</li>
+                        <li class="p-1">About</li>
+                        <li class="p-1">Services</li>
+                        <li class="p-1">Work</li>
+                        <li class="p-1">Pricing</li>
+                        <li class="p-1">Contact</li>
+                    </ul>
+                </nav>
+                <button
+                    class="bg-blue-600 h-10 absolute border-none focus:outline-none hover:bg-blue-700 py-1.5 md:py-1 md:m-3 px-4 inset-y-40 rounded-full text-white text-sm z-10 md:static md:order-5"
+                >
+                    Get Started
+                </button>
+            </header>
+            <section
+                id="bac"
+                class="col-start-1 relative bg-center bg-blue-600 bg-cover h-80 col-end-13 grid grid-cols-12 justify-items-center bg-no-repeat md:h-96 overflow-hidden"
+                style="
+                    background-image: url(../images/xps-7ZWVnVSaafY-unsplash.jpg);
+                "
+            >
+                <!-- <img src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg" class="col-start-1 col-end-13" alt=""> -->
+                <span
+                    class="text-white text-xl md:text-3xl font-bold absolute inset-y-1/2 sm:text-2xl text-center"
+                    >Latest News & Insights <br />
+                    <span class="text-xs"
+                        >HOME <i class="bi bi-chevron-right"></i> BLOG</span
+                    ></span
+                >
             </section>
-        </article>
-        <article class="col-start-1 col-end-13 p-2 m-2 md:col-start-1 md:mt-20 md:col-end-8 md:order-1 lg:col-start-2 lg:col-end-9">
-            <img src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg" alt="">
-            <h1 class="text-3xl font-semibold">How to lead Employees through technology</h1>
-            <h2 class="text-lg font-semibold text-blue-600 my-4">Technology</h2>
-            <div class="my-4">
-                <span class="bg-blue-600 text-xl sm:text-3xl rounded-full bi bi-grid-3x3-gap-fill text-white p-2 pt-0"></span>
-                <span class="text-gray-700 text-sm sm:px-6 sm:text-base">Written by <span class="text-black font-semibold">Admin</span>, March 10, 2020</span>
-            </div>
-            <p class="text-gray-600 font-semibold py-4 lg:leading-7 lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ex,
-                 vel quod veniam temporibus deleniti unde animi consectetur nostrum exercitationem! At architecto aliquam 
-                 quas. Iusto, soluta sed? Numquam vero sint qui debitis labore molestias, magni delectus possimus quaerat
-                  et voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, totam.
-            </p>
-            <button class="bg-blue-200 text-blue-600 px-8 font-semibold py-3 rounded-full ">Read More</button>
-        </article>
-        <nav class="col-start-1 col-end-13 p-6 order-5 md:order-4 md:col-start-8 md:col-end-13 lg:col-start-9 lg:col-end-13 xl:col-end-12">
-            <div class="relative">
-                <img src="../images/chrissa-giannakoudi-SZ_zz7VPW8Q-unsplash.jpg" class="rounded-lg opacity-80 w-full h-80 sm:h-auto md:h-80 lg:h-auto " alt="">
-                <div class="absolute inset-0 flex justify-center items-center text-justify flex-col">
-                    <h1 class="font-bold sm:text-2xl md:text-base lg:text-2xl text-xl p-2 mb-6 justify-self-center text-white">Join San Francisco</h1>
-                    <p class="font-semibold text-base lg:text-base md:text-sm sm:text-xl p-2 text-white mx-10">Create an account to receive great stories in your inbox.</p>
-                    <button class="rounded-full lg:text-base md:text-base bg-green-400 mt-10 text-white text-base sm:text-xl font-semibold px-10 py-3">Sign Up</button>
+            <article
+                class="col-start-1 col-end-13 flex flex-col m-4 p-2 text-xl md:mt-16 md:order-2 md:col-start-8 md:col-end-13 md:text-base lg:text-lg lg:col-start-9 lg:col-end-13 xl:col-end-12"
+            >
+                <div class="bg-gray-100 ring-inset rounded-full flex my-3">
+                    <input
+                        type="search"
+                        placeholder="Enter Keyword"
+                        id=""
+                        class="focus:outline-none w-10 bg-gray-100 flex-grow px-3 pb-2 pt-1.5 rounded-full"
+                    />
+                    <i
+                        class="bi bi-search text-blue-600 pr-6 px-3 pb-2 pt-1.5"
+                    ></i>
                 </div>
-            </div>
-            <div class="mt-16">
-                <h1 class="font-bold text-2xl my-5">Tags</h1>
-                <ul class="flex font-semibold text-sm sm:text-base md:text-sm flex-wrap">
-                    <li class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1 ml-0">App</li>
-                    <li class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1">Branding</li>
-                    <li class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1">Develpment</li>
-                    <li class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1">Design</li>
+                <h1 class="font-semibold p-2 lg:m-2 text-2xl md:text-lg">
+                    Categories
+                </h1>
+                <div
+                    class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between"
+                >
+                    <h1 class="text-blue-600">App</h1>
+                    <span
+                        class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full"
+                        >5</span
+                    >
+                </div>
+                <div
+                    class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between"
+                >
+                    <h1 class="text-gray-500">Design</h1>
+                    <span
+                        class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full"
+                        >3</span
+                    >
+                </div>
+                <div
+                    class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between"
+                >
+                    <h1 class="text-gray-500">Software</h1>
+                    <span
+                        class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full"
+                        >8
+                    </span>
+                </div>
+                <div
+                    class="font-semibold p-2 lg:m-2 flex border-b-2 justify-between"
+                >
+                    <h1 class="text-gray-500">Technology</h1>
+                    <span
+                        class="bg-blue-600 text-lg pb-1 px-4 md:text-base text-white rounded-full"
+                        >5</span
+                    >
+                </div>
+                <section
+                    class="text-xl flex flex-col font-semibold hidden md:block md:text-sm lg:text-base"
+                >
+                    <h1 class="p-2 mt-2 text-2xl md:text-lg">Popular Posts</h1>
+                    <div class="p-2 lg:m-2 border-b-2">
+                        <h1 class="text-lg text-gray-500 p-2 pl-0">Software</h1>
+                        <p class="text-blue-600 p-2 pl-0">
+                            iPhone 12: Software comes first
+                        </p>
+                    </div>
+                    <div class="p-2 lg:m-2 border-b-2">
+                        <h1 class="text-lg md:text-lg text-gray-500 p-2 pl-0">
+                            Technology
+                        </h1>
+                        <p class="p-2 pl-0">iPhone 12: Software comes first</p>
+                    </div>
+                    <div class="p-2 lg:m-2 border-b-2">
+                        <h1 class="text-lg md:text-lg text-gray-500 p-2 pl-0">
+                            Design
+                        </h1>
+                        <p class="p-2 pl-0">iPhone 12: Software comes first</p>
+                    </div>
+                    <div class="p-2 lg:m-2 border-b-2">
+                        <h1 class="text-lg md:text-lg text-gray-500 p-2 pl-0">
+                            App
+                        </h1>
+                        <p class="p-2 pl-0">iPhone 12: Software comes first</p>
+                    </div>
+                </section>
+            </article>
+            <article
+                class="col-start-1 col-end-13 p-2 m-2 md:col-start-1 md:mt-20 md:col-end-8 md:order-1 lg:col-start-2 lg:col-end-9"
+            >
+                <img
+                    src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg"
+                    alt=""
+                />
+                <h1 class="text-3xl font-semibold">
+                    How to lead Employees through technology
+                </h1>
+                <h2 class="text-lg font-semibold text-blue-600 my-4">
+                    Technology
+                </h2>
+                <div class="my-4">
+                    <span
+                        class="bg-blue-600 text-xl sm:text-3xl rounded-full bi bi-grid-3x3-gap-fill text-white p-2 pt-0"
+                    ></span>
+                    <span class="text-gray-700 text-sm sm:px-6 sm:text-base"
+                        >Written by
+                        <span class="text-black font-semibold">Admin</span>,
+                        March 10, 2020</span
+                    >
+                </div>
+                <p
+                    class="text-gray-600 font-semibold py-4 lg:leading-7 lg:text-lg"
+                >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt ex, vel quod veniam temporibus deleniti unde animi
+                    consectetur nostrum exercitationem! At architecto aliquam
+                    quas. Iusto, soluta sed? Numquam vero sint qui debitis
+                    labore molestias, magni delectus possimus quaerat et
+                    voluptatem! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Natus, totam.
+                </p>
+                <button
+                    class="bg-blue-200 text-blue-600 px-8 font-semibold py-3 rounded-full"
+                >
+                    Read More
+                </button>
+            </article>
+            <nav
+                class="col-start-1 col-end-13 p-6 order-5 md:order-4 md:col-start-8 md:col-end-13 lg:col-start-9 lg:col-end-13 xl:col-end-12"
+            >
+                <div class="relative">
+                    <img
+                        src="../images/chrissa-giannakoudi-SZ_zz7VPW8Q-unsplash.jpg"
+                        class="rounded-lg opacity-80 w-full h-80 sm:h-auto md:h-80 lg:h-auto"
+                        alt=""
+                    />
+                    <div
+                        class="absolute inset-0 flex justify-center items-center text-justify flex-col"
+                    >
+                        <h1
+                            class="font-bold sm:text-2xl md:text-base lg:text-2xl text-xl p-2 mb-6 justify-self-center text-white"
+                        >
+                            Join San Francisco
+                        </h1>
+                        <p
+                            class="font-semibold text-base lg:text-base md:text-sm sm:text-xl p-2 text-white mx-10"
+                        >
+                            Create an account to receive great stories in your
+                            inbox.
+                        </p>
+                        <button
+                            class="rounded-full lg:text-base md:text-base bg-green-400 mt-10 text-white text-base sm:text-xl font-semibold px-10 py-3"
+                        >
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-16">
+                    <h1 class="font-bold text-2xl my-5">Tags</h1>
+                    <ul
+                        class="flex font-semibold text-sm sm:text-base md:text-sm flex-wrap"
+                    >
+                        <li
+                            class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1 ml-0"
+                        >
+                            App
+                        </li>
+                        <li
+                            class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1"
+                        >
+                            Branding
+                        </li>
+                        <li
+                            class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1"
+                        >
+                            Develpment
+                        </li>
+                        <li
+                            class="bg-blue-200 rounded-lg text-blue-600 px-3 pb-2 pt-1 m-1"
+                        >
+                            Design
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <article
+                class="col-start-1 col-end-13 p-3 m-2 border-t-2 order-3 md:order-3 md:col-start-1 md:col-end-8 lg:col-start-2 lg:col-end-9"
+            >
+                <img
+                    src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg "
+                    class="rounded"
+                    alt=""
+                />
+                <h1 class="font-semibold text-3xl">
+                    The 6 best software programs of 2020
+                </h1>
+                <h2 class="text-lg font-semibold text-blue-600 my-4">
+                    Software
+                </h2>
+                <div class="my-4">
+                    <span
+                        class="bg-blue-600 text-xl sm:text-3xl rounded-full bi bi-grid-3x3-gap-fill text-white p-2 pt-0"
+                    ></span>
+                    <span class="text-gray-700 text-sm sm:px-6 sm:text-base"
+                        >Written by
+                        <span class="text-black font-semibold">Admin</span>,
+                        March 10, 2020</span
+                    >
+                </div>
+                <p
+                    class="text-gray-600 font-semibold py-4 lg:leading-7 lg:text-lg"
+                >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt ex, vel quod veniam temporibus deleniti unde animi
+                    consectetur nostrum exercitationem! At architecto aliquam
+                    quas. Iusto, soluta sed? Numquam vero sint qui debitis
+                    labore molestias, magni delectus possimus quaerat et
+                    voluptatem! Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Voluptatum, nesciunt.
+                </p>
+                <button
+                    class="bg-blue-200 text-blue-600 px-8 font-semibold py-3 rounded-full"
+                >
+                    Read More
+                </button>
+            </article>
+            <article
+                class="col-start-1 col-end-13 p-3 m-2 border-t-2 mb-6 order-4 md:order-5 md:col-start-1 md:col-end-8 lg:col-start-2 lg:col-end-9"
+            >
+                <img
+                    src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg "
+                    class="rounded"
+                    alt=""
+                />
+                <h1 class="font-semibold text-3xl">
+                    Business needs fewer coders, more software developers
+                </h1>
+                <h2 class="text-lg font-semibold text-blue-600 my-4">
+                    Technology
+                </h2>
+                <div class="my-4">
+                    <span
+                        class="bg-blue-600 text-xl sm:text-3xl rounded-full bi bi-grid-3x3-gap-fill text-white p-2 pt-0"
+                    ></span>
+                    <span class="text-gray-700 text-sm sm:px-6 sm:text-base"
+                        >Written by
+                        <span class="text-black font-semibold">Admin</span>,
+                        March 10, 2020</span
+                    >
+                </div>
+                <p
+                    class="text-gray-600 font-semibold py-4 lg:leading-7 lg:text-lg"
+                >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt ex, vel quod veniam temporibus deleniti unde animi
+                    consectetur nostrum exercitationem! At architecto aliquam
+                    quas. Iusto, soluta sed? Numquam vero sint qui debitis
+                    labore molestias, magni delectus possimus quaerat et
+                    voluptatem! Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Ratione, dolorem?
+                </p>
+                <button
+                    class="bg-blue-200 text-blue-600 px-8 font-semibold py-3 rounded-full"
+                >
+                    Read More
+                </button>
+            </article>
+            <nav class="col-start-1 col-end-13 border-t-2 mt-4 order-6">
+                <ul class="flex my-12 justify-center text-gray-400 flex-wrap">
+                    <li>
+                        <a
+                            href="#"
+                            class="bi bi-chevron-left p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="p-1 sm:py-2 px-2 sm:px-4 m-2 rounded outline-none text-white bg-blue-600"
+                            >1</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"
+                            >2</a
+                        >
+                    </li>
+                    <li class="hidden sm:block">
+                        <a
+                            href="#"
+                            class="p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"
+                            >3</a
+                        >
+                    </li>
+                    <li class="px-1 mx-2 rounded outline-non">...</li>
+                    <li>
+                        <a
+                            href="#"
+                            class="p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"
+                            >8</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="bi bi-chevron-right p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"
+                        ></a>
+                    </li>
                 </ul>
-            </div>
-        </nav>
-        <article class="col-start-1 col-end-13 p-3 m-2 border-t-2 order-3 md:order-3 md:col-start-1 md:col-end-8 lg:col-start-2 lg:col-end-9">
-            <img src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg " class="rounded" alt="">
-            <h1 class="font-semibold text-3xl">The 6 best software programs of 2020</h1>
-            <h2 class="text-lg font-semibold text-blue-600 my-4">Software</h2>
-            <div class="my-4">
-                <span class="bg-blue-600 text-xl sm:text-3xl rounded-full bi bi-grid-3x3-gap-fill text-white p-2 pt-0"></span>
-                <span class="text-gray-700 text-sm sm:px-6 sm:text-base">Written by <span class="text-black font-semibold">Admin</span>, March 10, 2020</span>
-            </div>
-            <p class="text-gray-600 font-semibold py-4 lg:leading-7 lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ex,
-                 vel quod veniam temporibus deleniti unde animi consectetur nostrum exercitationem! At architecto aliquam 
-                 quas. Iusto, soluta sed? Numquam vero sint qui debitis labore molestias, magni delectus possimus quaerat
-                  et voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, nesciunt.
-            </p>
-            <button class="bg-blue-200 text-blue-600 px-8 font-semibold py-3 rounded-full ">Read More</button>
-        </article>
-        <article class="col-start-1 col-end-13 p-3 m-2 border-t-2 mb-6 order-4 md:order-5 md:col-start-1 md:col-end-8  lg:col-start-2 lg:col-end-9">
-            <img src="../images/amadej-tauses-xWOTojs1eg4-unsplash.jpg " class="rounded" alt="">
-            <h1 class="font-semibold text-3xl">Business needs fewer coders, more software developers</h1>
-            <h2 class="text-lg font-semibold text-blue-600 my-4">Technology</h2>
-            <div class="my-4">
-                <span class="bg-blue-600 text-xl sm:text-3xl rounded-full bi bi-grid-3x3-gap-fill text-white p-2 pt-0"></span>
-                <span class="text-gray-700 text-sm sm:px-6 sm:text-base">Written by <span class="text-black font-semibold">Admin</span>, March 10, 2020</span>
-            </div>
-            <p class="text-gray-600 font-semibold py-4 lg:leading-7 lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ex,
-                 vel quod veniam temporibus deleniti unde animi consectetur nostrum exercitationem! At architecto aliquam 
-                 quas. Iusto, soluta sed? Numquam vero sint qui debitis labore molestias, magni delectus possimus quaerat
-                  et voluptatem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem?
-            </p>
-            <button class="bg-blue-200 text-blue-600 px-8 font-semibold py-3 rounded-full ">Read More</button>
-        </article>
-        <nav class="col-start-1 col-end-13 border-t-2 mt-4 order-6">
-            <ul class="flex my-12 justify-center text-gray-400 flex-wrap">
-                <li><a href="#" class="bi bi-chevron-left p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"></a></li>
-                <li><a href="#" class="p-1 sm:py-2 px-2 sm:px-4 m-2  rounded outline-none text-white bg-blue-600">1</a></li>
-                <li><a href="#" class="p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none">2</a></li>
-                <li class="hidden sm:block"><a href="#" class="p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none">3</a></li>
-                <li class="px-1 mx-2 rounded outline-non">...</li>
-                <li><a href="#" class="p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none">8</a></li>
-                <li><a href="#" class="bi bi-chevron-right p-1 sm:py-2 px-2 sm:px-4 m-2 border-2 rounded outline-none"></a></li>
-            </ul>
-        </nav>
-        <footer class="order-7 col-start-1 col-end-13 lg:grid lg:grid-cols-12 z-10 relative">
-            <div id="foot1" class=" z-50 text-center p-3 text-white rounded lg:static md:absolute inset-x-2  shadow-md md:flex md:mx-10 md:justify-around lg:col-start-2 lg:col-end-12 md:-mb-16 ">
-                <div class="md:my-10 z-50">
-                    <p class="text-2xl">Stay up to date with the latest news!</p>
-                    <p>*We won't spam you, we promise! <i class="bi bi-hand-thumbs-up-fill text-yellow-400"></i></p>
+            </nav>
+            <footer
+                class="order-7 col-start-1 col-end-13 lg:grid lg:grid-cols-12 z-10 relative"
+            >
+                <div
+                    id="foot1"
+                    class="z-50 text-center p-3 text-white rounded lg:static md:absolute inset-x-2 shadow-md md:flex md:mx-10 md:justify-around lg:col-start-2 lg:col-end-12 md:-mb-16"
+                >
+                    <div class="md:my-10 z-50">
+                        <p class="text-2xl">
+                            Stay up to date with the latest news!
+                        </p>
+                        <p>
+                            *We won't spam you, we promise!
+                            <i
+                                class="bi bi-hand-thumbs-up-fill text-yellow-400"
+                            ></i>
+                        </p>
+                    </div>
+                    <div class="flex my-10 mx-3 lg:w-96">
+                        <input
+                            type="text"
+                            class="rounded-full p-3 bg-gray-700 w-full"
+                            placeholder="Enter Your Email"
+                        />
+                        <button
+                            class="rounded-full py-3 -ml-20 px-6 focus:outline-none"
+                            id="btn"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
-                <div class="flex my-10 mx-3 lg:w-96">
-                    <input type="text" class="rounded-full p-3 bg-gray-700 w-full" placeholder="Enter Your Email">
-                    <button class="rounded-full py-3 -ml-20 px-6 focus:outline-none" id="btn">Subscribe</button>
-                </div>
-            </div>
-            <div id="end" class="col-start-1 col-end-13 lg:grid lg:grid-cols-12 pt-12 z-0 lg:m-0 md:mt-24">
-                <div class="py-8 lg:col-start-2 lg:col-end-12 lg:flex lg:justify-around z-0">
-                    <div class="p-2 m-2">
-                        <a href="#" class="text-3xl">
-                            <i class="bi bi-grid-3x3-gap-fill text-blue-600"></i>
-                            <span class=" align-middle">
-                            <span class="font-bold">San</span>Francisco
+                <div
+                    id="end"
+                    class="col-start-1 col-end-13 lg:grid lg:grid-cols-12 pt-12 z-0 lg:m-0 md:mt-24"
+                >
+                    <div
+                        class="py-8 lg:col-start-2 lg:col-end-12 lg:flex lg:justify-around z-0"
+                    >
+                        <div class="p-2 m-2">
+                            <a href="#" class="text-3xl">
+                                <i
+                                    class="bi bi-grid-3x3-gap-fill text-blue-600"
+                                ></i>
+                                <span class="align-middle">
+                                    <span class="font-bold">San</span>Francisco
+                                </span>
+                            </a>
+                            <p>
+                                We are an industry-leading provider of IT and
+                                business technology services.
+                            </p>
+                        </div>
+                        <div class="hidden lg:block">
+                            <h1 class="font-bold mb-4">Company</h1>
+                            <h2 class="text-blue-600">Services</h2>
+                            <h2>About</h2>
+                            <h2>Careers</h2>
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="hidden lg:block">
+                            <h1 class="font-bold mb-4">Products</h1>
+                            <h2>
+                                Platform
+                                <span
+                                    class="bg-blue-600 text-white rounded-lg px-2 py-1 text-xs"
+                                    >New</span
+                                >
+                            </h2>
+                            <h2>IT App</h2>
+                            <h2>Prototype</h2>
+                            <h2>Payments</h2>
+                        </div>
+                        <div class="hidden lg:block">
+                            <h1 class="font-bold mb-4">Services</h1>
+                            <h2>IT Resources</h2>
+                            <h2>Pricing</h2>
+                            <h2>Help Center</h2>
+                        </div>
+                        <div class="p-2 mx-2">
+                            <h1 class="font-bold text-lg my-2">Social</h1>
+                            <span class="text-gray-600 text-xl">
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-github"></i>
                             </span>
-                        </a>
-                        <p>We are an industry-leading provider of IT and business technology services.</p>
+                        </div>
                     </div>
-                    <div class="hidden lg:block">
-                        <h1 class="font-bold mb-4">Company</h1>
-                        <h2 class="text-blue-600">Services</h2>
-                        <h2>About</h2>
-                        <h2>Careers</h2>
-                        <h2>Contact</h2>
-                    </div>
-                    <div class="hidden lg:block">
-                        <h1 class="font-bold mb-4">Products</h1>
-                        <h2>Platform <span class="bg-blue-600 text-white rounded-lg px-2 py-1 text-xs">New</span></h2>
-                        <h2>IT App</h2>
-                        <h2>Prototype</h2>
-                        <h2>Payments</h2>
-                    </div>
-                    <div class="hidden lg:block">
-                        <h1 class="font-bold mb-4">Services</h1>
-                        <h2>IT Resources</h2>
-                        <h2>Pricing</h2>
-                        <h2>Help Center</h2>
-                    </div>
-                    <div class="p-2 mx-2">
-                        <h1 class="font-bold text-lg my-2">Social</h1>
-                        <span class="text-gray-600 text-xl">
-                            <i class="bi bi-twitter"></i>
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-github"></i>
-                        </span>
+                    <div
+                        class="p-2 border-t-2 pt-6 text-gray-500 text-sm lg:col-start-2 lg:col-end-12 text-center"
+                    >
+                        &copy;2020 San Francisco by Viworx-Co. All Rights
+                        Reserved.
+                        <span class="text-blue-600">Terms & Coditions</span>
                     </div>
                 </div>
-                <div class="p-2 border-t-2 pt-6 text-gray-500 text-sm lg:col-start-2 lg:col-end-12 text-center">
-                    &copy;2020 San Francisco by Viworx-Co. All Rights Reserved. <span class="text-blue-600">Terms & Coditions</span>
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
+            </footer>
+        </div>
+    </body>
 </html>
